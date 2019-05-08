@@ -1,94 +1,107 @@
-# V4
+# HTML Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status)](https://app.netlify.com/sites/brittanychiang/deploys)
+You'll create a personal web page to show off your work. We will test your HTML knowledge, and then it will be up to you to use CSS to style your own page and make it unique.
 
-The fourth iteration of my personal site built with [Gatsby](https://www.gatsbyjs.org/) and hosted with [Netlify](https://www.netlify.com/).
+## What You'll Build
 
-> 📢 **PSA for those who want to fork or copy this repo and use it for their own site:**
->
-> Please be a decent person and give me proper credit by linking back to my website! Refer to this handy [quora post](https://www.quora.com/Is-it-bad-to-copy-other-peoples-code) if you're not sure.
+The end result will be a portfolio that you can deploy publicly! Here's a sample of what this could look like:
 
-👀 [Looking for v3?](https://bchiang7.github.io/)
+![Sample Portfolio](http://courseware.codeschool.com.s3.amazonaws.com/projects/build-a-portfolio-using-html-and-css.png)
 
-## 🚀 Quick Start
+## What You'll Learn
 
-1. **Install the Gatsby CLI**
+We'll dive into a number of basic HTML concepts, including:
 
-   ```sh
-   npm install -g gatsby-cli
-   ```
+* Creating an HTML page
+* Using classes to organize your page and tie in styles
+* Using headings to denote importance
+* Adding text using paragraphs
+* Creating links so users can contact you
 
-2. **Install and switch to the correct version of Node using NVM**
+## What You'll Need
 
-   ```sh
-   nvm install
-   ```
+You'll need a GitHub account, Git installed locally, and a text editor to edit HTML. We recommend using GitHub's [Atom Editor](https://atom.io/), which is free and very powerful. The [Brackets](http://brackets.io/) editor is another great tool.
 
-3. **Install dependencies**
+## Live Demo
 
-   ```sh
-   yarn install
-   ```
+Here is a [working version of this project](https://codeschool-project-demos.github.io/HTMLPortfolioProject/), and now it is your job to out-do our version of this project by customizing your portfolio even further and adding more CSS rules, etc. We can't wait to see what you come up with!
 
-4. **Start the development server**
+## Setup
 
-   ```sh
-   yarn start
-   ```
+Once you have cloned the forked repository, go into the directory containing the project and look for the `/src` directory. This is the directory where you will be making changes when you start following the step-by-step instructions. You can simply open those files in a text editor and get started.
 
-## Building and Running for Production
+You can always open the index.html file directly in your browser and work through the tasks below. You can also head over to the [Node.js](https://nodejs.org) website and follow the instructions to install Node on your machine. Once you have Node installed, open your command line and follow these instructions:
 
-In addition to the development server started with `yarn start`, you can also generate a full static production build and serve that to preview the site as it will appear once deployed:
-
-```sh
-yarn build
+```
+cd HTMLPortfolioProject
+npm install
+npm start
 ```
 
-```sh
-yarn serve
+Running `npm start` should open a browser window pointing to `http://localhost:3000`. Now once you make changes to the files under the `/src` directory, your browser will refresh automatically, displaying the newest changes made to the files. This will save you the round trip of saving files and clicking refresh on your browser.
+
+## Tasks
+
+Complete the following tasks to finish this project.
+
+
+### Create the Page Header
+
+At the top of our page, we'll want to create an element with a class of `header` for us to add some information about ourselves.	MENU
+
+### Header Text
+
+Inside of our `.header` element, create an `h1` tag with your name in it. This is your portfolio, so it makes sense for your name to have the most prominence.	MENU
+
+### Job Title
+
+Also inside the `.header` element, add a `h2` tag with a job title (ie. "software developer", or "web designer", or "maker of things", etc).	MENU
+
+### The Tagline Element
+
+Next, create a new element that has a CSS class called `tagline`. In this element you'll be giving a little more information about yourself.	MENU
+
+### A Little About You
+
+Inside the `.tagline` element, create a `h3` tag inviting the visitor to learn more about you (ie. "Learn More About Me", or "Here's What I Do", etc). Also add an introductory paragraph with more information about yourself, including what things you're passionate about, programming languages you enjoy writing in, etc.	MENU
+
+### The Skills Element
+
+Next, we'll create a place to list out our current skills by creating an element with a class of `skills`. In here we'll be listing out what we already know.	MENU
+
+### Skills Content
+
+Inside the `.skills` element, create a `h3` tag inviting the user to learn more about your skills (ie. "my skills"). Also add a paragraph tag describing your skills (ie. "I enjoy writing front-end code with these technologies").	MENU
+
+### List of Skills
+
+Inside the `.skills` element, create a new `ul` which will be a list of of your skills. In here, add 3 skills you currently possess. `HTML` must be one of these skills.	MENU
+
+### The Contact Element
+
+The last section of our page will give people a way to contact us. Create a wrapper element for this area and give it a class of `contact`.	MENU
+
+### Contact Copy
+
+Inside the `.contact` element, create a `h3` tag inviting the user to contact you (ie. "contact me", or "drop me a line"). Also add a paragraph tag describing how people can contact you.	MENU
+
+### Contact Link
+
+Lastly, we just need a way for people to get in touch with us! In the paragraph you created, add an anchor tag (an `<a>` element) pointing people to a place where they can get more information about you (ie. Twitter, LinkedIn, Github, etc).
+
+
+## Next Steps
+
+Now that we have a working portfolio site, the next (optional) step is to style it. If you want to learn how to style this one with Bootstrap, head over to the [Build a Portfolio Using Bootstrap)(/projects/build-a-portfolio-using-twitter-bootstrap) project.
+
+If you’d rather style it on your own, now’s an excellent chance to add a stylesheet to this project and use those CSS skills!
+
+## Deploying
+
+Putting this site up on GitHub pages is a bit different than some other projects because the code is all in the `/src` directory. There’s a nifty way to push this directory to a GitHub branch, which allows you to use GitHub pages with it! Try running this Git command for this project:
+
+```
+git subtree push --prefix src origin gh-pages
 ```
 
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories in this project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    ├── README.md
-    └── yarn.lock
-
-1. **`/node_modules`**: The directory where all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2. **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser), like your site header, or a page template. “Src” is a convention for “source code”.
-
-3. **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4. **`.prettierrc`**: This is a configuration file for a tool called [Prettier](https://prettier.io/), which is a tool to help keep the formatting of your code consistent.
-
-5. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://next.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://next.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby node APIs](https://next.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://next.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9. **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. (You won’t change this file directly).
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-13. **`yarn.lock`**: [Yarn](https://yarnpkg.com/) is a package manager alternative to npm. You can use either yarn or npm, though all of the Gatsby docs reference npm. This file serves essentially the same purpose as `package-lock.json`, just for a different package management system.
+This will push the `src` folder up to GitHub on the `gh-pages` branch. After that, you should be able to open up `http://username.github.io/HTMLPortfolioProject`, where `username` is your GitHub username.
