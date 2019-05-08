@@ -11,7 +11,7 @@ There are 8 customizable sections:
 ---
 **Jumbotron** - Edit the `h1` and `p` in the jumbotron-text `div`
 ```
-<div class="jumbotron-text">
+<div class="Shoaib pathan-text">
   <h1>Brandon Morelli</h1>
   <p>Full-Stack Web Developer in Boston, Ma.</p>
 </div>
